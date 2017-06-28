@@ -90,8 +90,7 @@ def home():
 def login():
     return github.authorize(callback=url_for('authorized',
                                              _external=True,
-                                             #_scheme='https'))
-                                             ))
+                                             _scheme='https'))
     
 @app.route('/logout')
 def logout():
